@@ -8,11 +8,20 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@chakra-ui/vue": "^0.3.7",
+    "@mdx-js/mdx": "^1.5.8",
+    "@mdx-js/vue": "^1.5.7",
+    "@mdx-js/vue-loader": "^1.5.7",
     "core-js": "^3.6.4",
+    "emotion": "^10.0.27",
+    "prism-theme-night-owl": "^1.4.0",
+    "prismjs": "^1.20.0",
     "vue": "^2.6.11",
+    "vue-prism-editor": "^0.5.1",
     "vue-router": "^3.1.5"
   },
   "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.9.0",
     "@vue/cli-plugin-babel": "~4.2.0",
     "@vue/cli-plugin-eslint": "~4.2.0",
     "@vue/cli-plugin-router": "~4.2.0",
