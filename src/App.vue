@@ -1,15 +1,42 @@
 <template>
-  <div id="app">
-    <router-view />
-  </div>
+  <c-box pos="relative" id="app">
+    <c-checkbox size="lg" v-model="isActive" pos="absolute" top="10" right="12">
+      Toggle MDX Provider context
+    </c-checkbox>
+    <c-reset />
+    <MDXProvider :components="isActive ? MDXComponents : {}">
+      <Home />
+    </MDXProvider>
+  </c-box>
 </template>
+
+<script>
+import { CReset, CCheckbox, CBox } from '@chakra-ui/vue';
+import { MDXProvider } from 'mdx-vue';
+import MDXComponents from '../components/MDXComponents';
+import Home from './views/home.mdx';
+
+export default {
+  components: {
+    CReset,
+    Home,
+    MDXProvider,
+    CBox,
+    CCheckbox
+  },
+  data() {
+    return {
+      isActive: true,
+      MDXComponents
+    };
+  }
+};
+</script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
   padding: 5rem;
 }
 

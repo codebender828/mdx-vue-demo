@@ -1,24 +1,7 @@
-# mdx-codeblocks
+# mdx-vue demo
+Demo app for mdx with Vue:
+- Implements component rendering in JSX
+- Implements defaults for `wrapper` and `inlineCode` components
+- Implements context with MDXProvider to render user provided components
 
-## Project setup
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+View Demo 👉🏽 https://mdx-vue.now.sh

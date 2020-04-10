@@ -19,7 +19,7 @@ const MDXComponents = {
     name: 'Heading',
     render() {
       return (
-        <CHeading as="h1" my="4" size="xl" my="1em" {...props}>
+        <CHeading as="h1" mb="3" size="xl" my="1em" {...props}>
           {this.$slots.default}
         </CHeading>
       );
@@ -31,7 +31,7 @@ const MDXComponents = {
       return (
         <CAlert
           rounded="md"
-          my="4"
+          my="3"
           status="info"
           variant="left-accent"
           {...props}
@@ -41,10 +41,10 @@ const MDXComponents = {
       );
     }
   }),
+  // eslint-disable-next-line
   code: props => ({
     name: 'CodeBlock',
     render() {
-      console.log(props);
       const code = this.$slots.default[0].text;
       return (
         <CBox rounded="md" overflow="hidden" fontSize="0.83em">
@@ -57,7 +57,7 @@ const MDXComponents = {
     name: 'Box',
     render() {
       return (
-        <CBox my="4" {...props}>
+        <CBox my="3" {...props}>
           {this.$slots.default}
         </CBox>
       );
