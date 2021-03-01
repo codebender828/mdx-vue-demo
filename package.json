@@ -17,7 +17,7 @@
     "mdx-vue": "^1.0.0",
     "mdx-vue-loader": "^1.0.1",
     "prism-theme-night-owl": "^1.4.0",
-    "prismjs": "^1.20.0",
+    "prismjs": "^1.23.0",
     "vue": "^2.6.11",
     "vue-prism-editor": "^0.5.1",
     "vue-router": "^3.1.5"
